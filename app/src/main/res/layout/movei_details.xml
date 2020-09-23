@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEADE"
+    android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/moviePosterWideCardView"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/moviePosterWide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            tools:src="@drawable/free_guy_584x800_9ff54222" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/moveTitleDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="Title"
+        android:textColor="@color/main"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moviePosterWideCardView" />
+
+    <TextView
+        android:id="@+id/movieOverviewDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        android:letterSpacing="0.04"
+        android:lineSpacingExtra="7dp"
+        android:text="Overview A ticking-time-bomb insomniac and a slippery soap salesman channel primal male aggression into a shocking new form of therapy. Their concept catches on, with underground 'fight clubs' forming in every town, until an eccentric gets in the way and ignites an out-of-control spiral toward oblivion."
+        android:textColor="@color/main"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/moveTitleDetails" />
+
+    <TextView
+        android:id="@+id/movieYearDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="5dp"
+        android:text="Year\n2000"
+        android:textColor="@color/secondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/movieDurationDetails"
+        app:layout_constraintStart_toEndOf="@id/moviePosterWideCardView"
+        app:layout_constraintTop_toTopOf="@id/moviePosterWideCardView" />
+
+    <TextView
+        android:id="@+id/movieDurationDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="5dp"
+        android:text="Duration\n132m"
+        android:textColor="@color/secondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/movieGenresDetails"
+        app:layout_constraintStart_toEndOf="@id/moviePosterWideCardView"
+        app:layout_constraintTop_toBottomOf="@id/movieYearDetails" />
+
+    <TextView
+        android:id="@+id/movieGenresDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="5dp"
+        android:text="Year\n2000"
+        android:textColor="@color/secondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/movieRatingDetails"
+        app:layout_constraintStart_toEndOf="@id/moviePosterWideCardView"
+        app:layout_constraintTop_toBottomOf="@id/movieDurationDetails" />
+
+    <TextView
+        android:id="@+id/movieRatingDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:letterSpacing="0.2"
+        android:lineSpacingExtra="5dp"
+        android:text="Rating\n77%"
+        android:textColor="@color/secondary"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/moviePosterWideCardView"
+        app:layout_constraintStart_toEndOf="@id/moviePosterWideCardView"
+        app:layout_constraintTop_toBottomOf="@id/movieGenresDetails" />
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/movieOverviewDetails" />
+</androidx.constraintlayout.widget.ConstraintLayout>
