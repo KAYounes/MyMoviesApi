@@ -43,7 +43,7 @@
                 android:id="@+id/movieOverviewDetails"
                 android:layout_width="355dp"
                 android:layout_height="wrap_content"
-                android:maxHeight="161dp"
+                android:maxHeight="167dp"
                 android:letterSpacing="0.04"
                 android:lineSpacingExtra="7dp"
                 android:layout_marginTop="10dp"
